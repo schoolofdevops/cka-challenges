@@ -13,7 +13,7 @@ kubectl label nodes node2 disk=fastssd
 - Deploy the pod.
 
 ```command
-kubectl apply -f pod.yaml
+kubectl apply -f code/pod.yaml
 ```
 
 - Get the list of the pod.
