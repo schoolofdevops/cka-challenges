@@ -4,12 +4,6 @@ https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
 
 ### Steps:
 
-- Label the one of the node as `disk=fastssd` 
-
-```command
-kubectl label nodes node2 disk=fastssd
-```
-
 - Deploy the pod.
 
 ```command
