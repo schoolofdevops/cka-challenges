@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-sp
+  name: static-pod
   labels:
      app: nginx
 spec:
