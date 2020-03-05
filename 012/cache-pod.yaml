@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: cache-volume-pod
+spec:
+ containers:
+ - image: httpd
+   name: cache-ctr
+   volumeMounts:
+   - mountPath: /cache
+     name: cache
