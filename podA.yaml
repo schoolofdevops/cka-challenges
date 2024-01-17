@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podA
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:wefw
+    imagePullPolicy: IfNotPresent
+ 
