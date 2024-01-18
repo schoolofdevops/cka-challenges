@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: podA
+  name: poda
   labels:
     app: nginx
 spec:

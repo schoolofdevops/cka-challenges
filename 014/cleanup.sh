@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-kubectl delete pods podA podB
+kubectl delete pods poda podb
