@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  name: loop
+spec:
+  replicas: 3
+  selecter:
+    matchLabels:
+      app: loop
+  templates:
+    metadata:
+      name: loop
+      labels:
+      app: loop
+    specs:
+      container:
+      - name: loop
+          image: schoolofdevops/loop
