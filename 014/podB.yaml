@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: podB
+  name: podb
   labels:
     app: python
     role: vote
