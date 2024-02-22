@@ -1,0 +1,58 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: task-pv0001
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp/data01"
+---
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: task-pv0002
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp/data02"
+
+---
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: task-pv0003
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 4Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp/data03"
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: task-pv0004
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp/data04"
